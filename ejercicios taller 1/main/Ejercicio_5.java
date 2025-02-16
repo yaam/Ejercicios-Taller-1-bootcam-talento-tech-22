@@ -21,30 +21,48 @@ public class Ejercicio_5 {
           int numero_3 = scanner.nextInt();
           scanner.nextLine();
           //Se realiza la comprobación de números
-          if (numero > numero_2) {
-            System.out.println("El numero " + numero + " mayor que " + numero_2);
+          if (numero > numero_2 && numero > numero_3) {
+            System.out.println("El numero " + numero + " mayor que " + numero_2 + " y también es mayor que " + numero_3 );
             scanner.nextLine();
 
-            }else if (numero < numero_2) {
-                System.out.println("El numero " + numero + " menor que " + numero_2);
+            }else if (numero < numero_2 && numero < numero_3) {
+                System.out.println("El numero " + numero + " menor que " + numero_2 + " y también es menor que "+ numero_3);
                 scanner.nextLine();
                 
-            }else if (numero > numero_3) {
-                System.out.println("El numero " + numero + " mayor que " + numero_3);
+            }else if (numero > numero_2 && numero < numero_3) {
+                System.out.println("El número " + numero + " mayor que " + numero_2 + " y también es menor que número "+ numero_3);
                 scanner.nextLine();
-            }else if (numero < numero_3) {
-                System.out.println("El numero " + numero + " menor que " + numero_3);
-                scanner.nextLine();
-                
-            }else if (numero_2 > numero) {
-                System.out.println("El numero dos " + numero_2 + " mayor que " + numero);
+            }else if (numero < numero_2 && numero > numero_3) {
+                System.out.println("El número " + numero + " menor que " + numero_2 + " y también es mayor que número 3" + numero_3);
                 scanner.nextLine();
                 
-            }else if (numero_2 < numero) {
-                System.out.println("El numero dos " + numero_2 + " menor que " + numero);
+            }else if (numero_2 > numero && numero_2 > numero_3) {
+                System.out.println("El número  " + numero_2 + " mayor que " + numero + " y también es mayor que número "+ numero_3);
                 scanner.nextLine();
+            }
+            else if (numero_2 < numero && numero_3 < numero_2) {
+                System.out.println("El número  " + numero_2 + " menor que " + numero + " y tambien es menor que  número " + numero_3);
+                scanner.nextLine();
+            }else if (numero_2 > numero && numero_2 < numero_3) {
+                System.out.println("El numero  " + numero_2 + " mayor que " + numero + " y tambien es menor que " + numero_3);
+                scanner.nextLine();
+                
+            }else if (numero_2 < numero && numero_2 > numero_3) {
+                System.out.println("El número " + numero_2 + " menor que " + numero + " y también es mayor que " + numero_3);
+                scanner.nextLine();
+                
+            }else if (numero_3 > numero && numero_3 > numero_2) {
+                System.out.println("El número  " + numero_3 + " mayor que " + numero + " y también es mayor que " + numero_2);
+                scanner.nextLine();
+            }else if (numero_3 < numero && numero_3 < numero_2) {
+                System.out.println("El número  " + numero_3 + " menor que " + numero + " y también es menor que " + numero_2);
+                scanner.nextLine();
+            }else if (numero_3 > numero && numero_3 < numero_2) {
+                System.out.println("el número " + numero_3 + " mayor que " + numero + " y también es menor que " + numero_2);
+            }else if (numero_3 < numero && numero_3 > numero_2) {
+                System.out.println("el número " + numero_3 + " menor que " + numero + " y también es mayor que " + numero_2);
             }{
-                System.out.println("EL número " + numero + " es igual al número " + numero_2 + "también es igual " +numero_3);
+                System.out.println("EL número " + numero + " es igual al número " + numero_2 + " y también es igual " +numero_3 );
                 scanner.nextLine();
 
             }
